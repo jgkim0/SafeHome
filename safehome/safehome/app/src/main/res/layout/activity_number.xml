@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".NumberActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn_phone"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="100dp"
+            android:background="#ff7423"
+            android:drawableLeft="@drawable/conenct"
+            android:onClick="phoneClicked"
+            android:paddingLeft="20dp"
+            android:text="연락처 설정"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정된 연락처 없음"
+            android:textSize="10pt"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="290dp"/>
+
+        <Button
+            android:id="@+id/btn_addr"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:layout_marginBottom="100dp"
+            android:background="#ff7423"
+            android:drawableLeft="@drawable/conenct"
+            android:paddingLeft="20dp"
+            android:text="위치 설정"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정된 주소 없음"
+            android:textSize="10pt"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="430dp"/>
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="resetClicked"
+            android:text="Reset" />
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
